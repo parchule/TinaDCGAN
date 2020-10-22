@@ -1,0 +1,350 @@
+2020-10-17 17:28:24.250577: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2020-10-17 17:28:24.273934: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2993335000 Hz
+2020-10-17 17:28:24.274513: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5645cd540ef0 executing computations on platform Host. Devices:
+2020-10-17 17:28:24.274539: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2020-10-17 17:28:24.397329: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: TITAN X (Pascal) major: 6 minor: 1 memoryClockRate(GHz): 1.531
+pciBusID: 0000:04:00.0
+totalMemory: 11.91GiB freeMemory: 4.36GiB
+2020-10-17 17:28:24.449809: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 1 with properties: 
+name: Tesla K40c major: 3 minor: 5 memoryClockRate(GHz): 0.745
+pciBusID: 0000:03:00.0
+totalMemory: 11.17GiB freeMemory: 11.03GiB
+2020-10-17 17:28:24.449857: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0, 1
+2020-10-17 17:28:24.451366: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-17 17:28:24.451381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 1 
+2020-10-17 17:28:24.451387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N N 
+2020-10-17 17:28:24.451393: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 1:   N N 
+2020-10-17 17:28:24.451477: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:0 with 4161 MB memory) -> physical GPU (device: 0, name: TITAN X (Pascal), pci bus id: 0000:04:00.0, compute capability: 6.1)
+2020-10-17 17:28:24.451765: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/device:GPU:1 with 10733 MB memory) -> physical GPU (device: 1, name: Tesla K40c, pci bus id: 0000:03:00.0, compute capability: 3.5)
+2020-10-17 17:28:24.453942: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5645cc107110 executing computations on platform CUDA. Devices:
+2020-10-17 17:28:24.453965: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): TITAN X (Pascal), Compute Capability 6.1
+2020-10-17 17:28:24.453975: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K40c, Compute Capability 3.5
+2020-10-17 17:28:24.457060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0, 1
+2020-10-17 17:28:24.457097: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-10-17 17:28:24.457108: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 1 
+2020-10-17 17:28:24.457116: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N N 
+2020-10-17 17:28:24.457123: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 1:   N N 
+2020-10-17 17:28:24.457197: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4161 MB memory) -> physical GPU (device: 0, name: TITAN X (Pascal), pci bus id: 0000:04:00.0, compute capability: 6.1)
+2020-10-17 17:28:24.457371: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10733 MB memory) -> physical GPU (device: 1, name: Tesla K40c, pci bus id: 0000:03:00.0, compute capability: 3.5)
+/home/hu440/anaconda3/envs/dcgan/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/hu440/anaconda3/envs/dcgan/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/hu440/anaconda3/envs/dcgan/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:528: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/hu440/anaconda3/envs/dcgan/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:529: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/hu440/anaconda3/envs/dcgan/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:530: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/hu440/anaconda3/envs/dcgan/lib/python3.7/site-packages/tensorflow/python/framework/dtypes.py:535: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+WARNING:tensorflow:From /home/hu440/anaconda3/envs/dcgan/lib/python3.7/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2020-10-17 17:28:37.143673: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10.0 locally
+2020-10-17 17:29:01.264714: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 952.05MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-17 17:29:04.068480: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 748.02MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-17 17:29:18.497206: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 952.05MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-17 17:29:21.338296: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 952.05MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-17 17:29:24.166164: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 952.05MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-17 17:29:27.041410: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 952.05MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-17 17:29:44.709779: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 952.05MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-17 17:29:53.654746: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 952.05MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-17 17:30:02.738079: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 748.02MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2020-10-17 17:30:14.501964: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 952.05MiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+{'G_img_sum': <absl.flags._flag.BooleanFlag object at 0x7faca047f2d0>,
+ 'batch_size': <absl.flags._flag.Flag object at 0x7facb4804f10>,
+ 'beta1': <absl.flags._flag.Flag object at 0x7facb4861450>,
+ 'checkpoint_dir': <absl.flags._flag.Flag object at 0x7faca047ab10>,
+ 'ckpt_freq': <absl.flags._flag.Flag object at 0x7faca047f110>,
+ 'crop': <absl.flags._flag.BooleanFlag object at 0x7faca047acd0>,
+ 'data_dir': <absl.flags._flag.Flag object at 0x7faca047a8d0>,
+ 'dataset': <absl.flags._flag.Flag object at 0x7facabcc89d0>,
+ 'epoch': <absl.flags._flag.Flag object at 0x7fad1f0573d0>,
+ 'export': <absl.flags._flag.BooleanFlag object at 0x7faca047add0>,
+ 'freeze': <absl.flags._flag.BooleanFlag object at 0x7faca047ae50>,
+ 'generate_test_images': <absl.flags._flag.Flag object at 0x7faca047f390>,
+ 'h': <tensorflow.python.platform.app._HelpFlag object at 0x7faca047f3d0>,
+ 'help': <tensorflow.python.platform.app._HelpFlag object at 0x7faca047f3d0>,
+ 'helpfull': <tensorflow.python.platform.app._HelpfullFlag object at 0x7faca047f450>,
+ 'helpshort': <tensorflow.python.platform.app._HelpshortFlag object at 0x7faca047f4d0>,
+ 'input_fname_pattern': <absl.flags._flag.Flag object at 0x7faca047a810>,
+ 'input_height': <absl.flags._flag.Flag object at 0x7faca047a550>,
+ 'input_width': <absl.flags._flag.Flag object at 0x7faca047a610>,
+ 'learning_rate': <absl.flags._flag.Flag object at 0x7fad1ef22950>,
+ 'max_to_keep': <absl.flags._flag.Flag object at 0x7faca047af50>,
+ 'out_dir': <absl.flags._flag.Flag object at 0x7faca047a990>,
+ 'out_name': <absl.flags._flag.Flag object at 0x7faca047aa50>,
+ 'output_height': <absl.flags._flag.Flag object at 0x7faca047a690>,
+ 'output_width': <absl.flags._flag.Flag object at 0x7faca047a750>,
+ 'sample_dir': <absl.flags._flag.Flag object at 0x7faca047abd0>,
+ 'sample_freq': <absl.flags._flag.Flag object at 0x7faca047f050>,
+ 'train': <absl.flags._flag.BooleanFlag object at 0x7faca047ac50>,
+ 'train_size': <absl.flags._flag.Flag object at 0x7facb4865c10>,
+ 'visualize': <absl.flags._flag.BooleanFlag object at 0x7faca047ad50>,
+ 'z_dim': <absl.flags._flag.Flag object at 0x7faca047f1d0>,
+ 'z_dist': <absl.flags._flag.Flag object at 0x7faca047f290>}
+Num of GPUs available:  13
+---------
+Variables: name (type shape) [size]
+---------
+generator/g_h0_lin/Matrix:0 (float32_ref 100x100352) [10035200, bytes: 40140800]
+generator/g_h0_lin/bias:0 (float32_ref 100352) [100352, bytes: 401408]
+generator/g_bn0/beta:0 (float32_ref 512) [512, bytes: 2048]
+generator/g_bn0/gamma:0 (float32_ref 512) [512, bytes: 2048]
+generator/g_h1/w:0 (float32_ref 5x5x256x512) [3276800, bytes: 13107200]
+generator/g_h1/biases:0 (float32_ref 256) [256, bytes: 1024]
+generator/g_bn1/beta:0 (float32_ref 256) [256, bytes: 1024]
+generator/g_bn1/gamma:0 (float32_ref 256) [256, bytes: 1024]
+generator/g_h2/w:0 (float32_ref 5x5x128x256) [819200, bytes: 3276800]
+generator/g_h2/biases:0 (float32_ref 128) [128, bytes: 512]
+generator/g_bn2/beta:0 (float32_ref 128) [128, bytes: 512]
+generator/g_bn2/gamma:0 (float32_ref 128) [128, bytes: 512]
+generator/g_h3/w:0 (float32_ref 5x5x64x128) [204800, bytes: 819200]
+generator/g_h3/biases:0 (float32_ref 64) [64, bytes: 256]
+generator/g_bn3/beta:0 (float32_ref 64) [64, bytes: 256]
+generator/g_bn3/gamma:0 (float32_ref 64) [64, bytes: 256]
+generator/g_h4/w:0 (float32_ref 5x5x3x64) [4800, bytes: 19200]
+generator/g_h4/biases:0 (float32_ref 3) [3, bytes: 12]
+discriminator/d_h0_conv/w:0 (float32_ref 5x5x3x64) [4800, bytes: 19200]
+discriminator/d_h0_conv/biases:0 (float32_ref 64) [64, bytes: 256]
+discriminator/d_h1_conv/w:0 (float32_ref 5x5x64x128) [204800, bytes: 819200]
+discriminator/d_h1_conv/biases:0 (float32_ref 128) [128, bytes: 512]
+discriminator/d_bn1/beta:0 (float32_ref 128) [128, bytes: 512]
+discriminator/d_bn1/gamma:0 (float32_ref 128) [128, bytes: 512]
+discriminator/d_h2_conv/w:0 (float32_ref 5x5x128x256) [819200, bytes: 3276800]
+discriminator/d_h2_conv/biases:0 (float32_ref 256) [256, bytes: 1024]
+discriminator/d_bn2/beta:0 (float32_ref 256) [256, bytes: 1024]
+discriminator/d_bn2/gamma:0 (float32_ref 256) [256, bytes: 1024]
+discriminator/d_h3_conv/w:0 (float32_ref 5x5x256x512) [3276800, bytes: 13107200]
+discriminator/d_h3_conv/biases:0 (float32_ref 512) [512, bytes: 2048]
+discriminator/d_bn3/beta:0 (float32_ref 512) [512, bytes: 2048]
+discriminator/d_bn3/gamma:0 (float32_ref 512) [512, bytes: 2048]
+discriminator/d_h4_lin/Matrix:0 (float32_ref 100352x1) [100352, bytes: 401408]
+discriminator/d_h4_lin/bias:0 (float32_ref 1) [1, bytes: 4]
+Total size of variables: 18852228
+Total bytes of variables: 75408912
+ [*] Reading checkpoints... ./out/20201017.172824 - data - FairFace_new/train_tilted - x224.z100.uniform_signed.y224.b64/./out/20201014.120946
+ [*] Failed to find a checkpoint
+ [!] Load failed...
+[       1 Epoch:[ 0/25] [   0/ 917] time: 17.9629, d_loss: 48.02557373, g_loss: 0.00000000
+[       2 Epoch:[ 0/25] [   1/ 917] time: 20.8613, d_loss: 35.38377380, g_loss: 0.00000000
+[       3 Epoch:[ 0/25] [   2/ 917] time: 23.7338, d_loss: 26.45979309, g_loss: 0.00000000
+[       4 Epoch:[ 0/25] [   3/ 917] time: 26.6461, d_loss: 28.18109703, g_loss: 0.00000000
+[       5 Epoch:[ 0/25] [   4/ 917] time: 29.4696, d_loss: 26.70394135, g_loss: 0.00000000
+[       6 Epoch:[ 0/25] [   5/ 917] time: 32.2720, d_loss: 27.41575623, g_loss: 0.00000000
+[       7 Epoch:[ 0/25] [   6/ 917] time: 35.1610, d_loss: 24.07582092, g_loss: 0.00000001
+[       8 Epoch:[ 0/25] [   7/ 917] time: 38.0600, d_loss: 29.95793915, g_loss: 0.00000000
+[       9 Epoch:[ 0/25] [   8/ 917] time: 40.9021, d_loss: 24.01330185, g_loss: 0.00000016
+[      10 Epoch:[ 0/25] [   9/ 917] time: 43.7789, d_loss: 26.96428299, g_loss: 0.00000001
+[      11 Epoch:[ 0/25] [  10/ 917] time: 46.6648, d_loss: 36.19482803, g_loss: 0.00000000
+[      12 Epoch:[ 0/25] [  11/ 917] time: 49.5783, d_loss: 31.14578056, g_loss: 0.00000000
+[      13 Epoch:[ 0/25] [  12/ 917] time: 52.3915, d_loss: 39.52167130, g_loss: 0.00000000
+[      14 Epoch:[ 0/25] [  13/ 917] time: 55.2635, d_loss: 25.85491180, g_loss: 0.00000001
+[      15 Epoch:[ 0/25] [  14/ 917] time: 58.0925, d_loss: 30.59017563, g_loss: 0.00000001
+[      16 Epoch:[ 0/25] [  15/ 917] time: 61.0194, d_loss: 32.09329605, g_loss: 0.00000000
+[      17 Epoch:[ 0/25] [  16/ 917] time: 64.0360, d_loss: 26.39730453, g_loss: 0.00000027
+[      18 Epoch:[ 0/25] [  17/ 917] time: 66.8920, d_loss: 23.27844429, g_loss: 0.00000007
+[      19 Epoch:[ 0/25] [  18/ 917] time: 69.8723, d_loss: 31.59027481, g_loss: 0.00000000
+[      20 Epoch:[ 0/25] [  19/ 917] time: 72.7403, d_loss: 22.90105438, g_loss: 0.00000003
+[      21 Epoch:[ 0/25] [  20/ 917] time: 75.7018, d_loss: 27.35758209, g_loss: 0.00000000
+[      22 Epoch:[ 0/25] [  21/ 917] time: 78.7747, d_loss: 26.16095161, g_loss: 0.00000000
+[      23 Epoch:[ 0/25] [  22/ 917] time: 81.8338, d_loss: 20.46320724, g_loss: 0.00019505
+[      24 Epoch:[ 0/25] [  23/ 917] time: 84.7154, d_loss: 30.01454544, g_loss: 0.00000000
+[      25 Epoch:[ 0/25] [  24/ 917] time: 87.7164, d_loss: 17.26128006, g_loss: 0.00109690
+[      26 Epoch:[ 0/25] [  25/ 917] time: 90.7331, d_loss: 32.14377594, g_loss: 0.00000000
+[      27 Epoch:[ 0/25] [  26/ 917] time: 93.7369, d_loss: 20.21510315, g_loss: 0.07624782
+[      28 Epoch:[ 0/25] [  27/ 917] time: 96.7643, d_loss: 30.78982353, g_loss: 0.00000000
+[      29 Epoch:[ 0/25] [  28/ 917] time: 99.6393, d_loss: 9.94511223, g_loss: 6.23841000
+[      30 Epoch:[ 0/25] [  29/ 917] time: 102.6443, d_loss: 31.76599312, g_loss: 0.00000000
+[      31 Epoch:[ 0/25] [  30/ 917] time: 105.5656, d_loss: 11.61403847, g_loss: 7.45779896
+[      32 Epoch:[ 0/25] [  31/ 917] time: 108.3884, d_loss: 37.41047287, g_loss: 0.00000000
+[      33 Epoch:[ 0/25] [  32/ 917] time: 111.1883, d_loss: 22.07936287, g_loss: 31.19654083
+[      34 Epoch:[ 0/25] [  33/ 917] time: 114.0272, d_loss: 30.19149399, g_loss: 0.00000000
+[      35 Epoch:[ 0/25] [  34/ 917] time: 116.8876, d_loss: 33.13689423, g_loss: 40.85864639
+[      36 Epoch:[ 0/25] [  35/ 917] time: 119.8661, d_loss: 19.25552177, g_loss: 0.00322664
+[      37 Epoch:[ 0/25] [  36/ 917] time: 122.8114, d_loss: 16.92671585, g_loss: 0.00000265
+[      38 Epoch:[ 0/25] [  37/ 917] time: 125.8081, d_loss: 26.70283508, g_loss: 32.74457169
+[      39 Epoch:[ 0/25] [  38/ 917] time: 128.7902, d_loss: 13.41136074, g_loss: 0.00022326
+[      40 Epoch:[ 0/25] [  39/ 917] time: 131.8427, d_loss: 10.77276897, g_loss: 40.98611069
+[      41 Epoch:[ 0/25] [  40/ 917] time: 134.6611, d_loss: 1.37031806, g_loss: 26.88015938
+[      42 Epoch:[ 0/25] [  41/ 917] time: 137.4951, d_loss: 1.09681094, g_loss: 5.85238457
+[      43 Epoch:[ 0/25] [  42/ 917] time: 140.4996, d_loss: 11.12208939, g_loss: 0.11006968
+[      44 Epoch:[ 0/25] [  43/ 917] time: 143.2491, d_loss: 3.98617649, g_loss: 40.32971191
+[      45 Epoch:[ 0/25] [  44/ 917] time: 146.1711, d_loss: 2.88860846, g_loss: 32.76213074
+[      46 Epoch:[ 0/25] [  45/ 917] time: 149.1318, d_loss: 12.81341743, g_loss: 0.01144581
+[      47 Epoch:[ 0/25] [  46/ 917] time: 152.0047, d_loss: 8.06391907, g_loss: 30.17603683
+[      48 Epoch:[ 0/25] [  47/ 917] time: 154.9409, d_loss: 2.78628778, g_loss: 17.57433891
+[      49 Epoch:[ 0/25] [  48/ 917] time: 157.9011, d_loss: 5.62558699, g_loss: 2.49353957
+[      50 Epoch:[ 0/25] [  49/ 917] time: 160.6822, d_loss: 19.32897758, g_loss: 0.00268225
+[      51 Epoch:[ 0/25] [  50/ 917] time: 163.4505, d_loss: 18.31212807, g_loss: 1.42034149
+[      52 Epoch:[ 0/25] [  51/ 917] time: 166.4493, d_loss: 17.01377106, g_loss: 0.12748270
+[      53 Epoch:[ 0/25] [  52/ 917] time: 169.2869, d_loss: 17.42213440, g_loss: 0.03395982
+[      54 Epoch:[ 0/25] [  53/ 917] time: 172.1967, d_loss: 10.15972519, g_loss: 4.77466488
+[      55 Epoch:[ 0/25] [  54/ 917] time: 175.1467, d_loss: 15.90054131, g_loss: 0.00122714
+[      56 Epoch:[ 0/25] [  55/ 917] time: 178.1033, d_loss: 5.72773933, g_loss: 5.15324688
+[      57 Epoch:[ 0/25] [  56/ 917] time: 180.8880, d_loss: 11.42961025, g_loss: 0.85862345
+[      58 Epoch:[ 0/25] [  57/ 917] time: 183.7579, d_loss: 13.97054577, g_loss: 0.04897393
+[      59 Epoch:[ 0/25] [  58/ 917] time: 186.7530, d_loss: 12.27559471, g_loss: 5.46728277
+[      60 Epoch:[ 0/25] [  59/ 917] time: 189.6306, d_loss: 11.07356548, g_loss: 0.44401366
+[      61 Epoch:[ 0/25] [  60/ 917] time: 192.5171, d_loss: 6.82315826, g_loss: 4.15713596
+[      62 Epoch:[ 0/25] [  61/ 917] time: 195.2656, d_loss: 7.23682165, g_loss: 0.82568693
+[      63 Epoch:[ 0/25] [  62/ 917] time: 198.1464, d_loss: 4.54193020, g_loss: 6.61330223
+[      64 Epoch:[ 0/25] [  63/ 917] time: 201.0674, d_loss: 8.70586681, g_loss: 0.01395271
+[      65 Epoch:[ 0/25] [  64/ 917] time: 203.9292, d_loss: 8.26136589, g_loss: 13.32011795
+[      66 Epoch:[ 0/25] [  65/ 917] time: 206.8537, d_loss: 3.80592656, g_loss: 1.58083594
+[      67 Epoch:[ 0/25] [  66/ 917] time: 209.8919, d_loss: 4.86800003, g_loss: 1.01690817
+[      68 Epoch:[ 0/25] [  67/ 917] time: 212.7744, d_loss: 3.58829021, g_loss: 2.17558479
+[      69 Epoch:[ 0/25] [  68/ 917] time: 215.6181, d_loss: 7.22991848, g_loss: 0.22760938
+[      70 Epoch:[ 0/25] [  69/ 917] time: 218.4964, d_loss: 5.15343285, g_loss: 2.37473440
+[      71 Epoch:[ 0/25] [  70/ 917] time: 221.4206, d_loss: 7.10035467, g_loss: 0.06115685
+[      72 Epoch:[ 0/25] [  71/ 917] time: 224.2956, d_loss: 7.03673506, g_loss: 10.32138443
+[      73 Epoch:[ 0/25] [  72/ 917] time: 227.1342, d_loss: 6.13244820, g_loss: 0.13033949
+[      74 Epoch:[ 0/25] [  73/ 917] time: 230.0157, d_loss: 3.53797126, g_loss: 1.40359342
+[      75 Epoch:[ 0/25] [  74/ 917] time: 232.8826, d_loss: 4.87756538, g_loss: 0.35511500
+[      76 Epoch:[ 0/25] [  75/ 917] time: 235.7010, d_loss: 5.94022608, g_loss: 0.35561156
+[      77 Epoch:[ 0/25] [  76/ 917] time: 238.5556, d_loss: 4.80025482, g_loss: 0.47734460
+[      78 Epoch:[ 0/25] [  77/ 917] time: 241.5124, d_loss: 5.73143387, g_loss: 0.18485147
+[      79 Epoch:[ 0/25] [  78/ 917] time: 244.5576, d_loss: 4.02068377, g_loss: 2.03286505
+[      80 Epoch:[ 0/25] [  79/ 917] time: 247.3570, d_loss: 12.12248707, g_loss: 0.00045525
+[      81 Epoch:[ 0/25] [  80/ 917] time: 250.3298, d_loss: 8.79912472, g_loss: 5.62719917
+[      82 Epoch:[ 0/25] [  81/ 917] time: 253.2546, d_loss: 6.83152819, g_loss: 0.06223639
+[      83 Epoch:[ 0/25] [  82/ 917] time: 256.3125, d_loss: 5.32687569, g_loss: 2.48572946
+[      84 Epoch:[ 0/25] [  83/ 917] time: 259.2584, d_loss: 7.99312782, g_loss: 0.00656390
+[      85 Epoch:[ 0/25] [  84/ 917] time: 262.2062, d_loss: 5.30372429, g_loss: 5.91047001
+[      86 Epoch:[ 0/25] [  85/ 917] time: 265.1299, d_loss: 6.84798527, g_loss: 0.05260322
+[      87 Epoch:[ 0/25] [  86/ 917] time: 267.9657, d_loss: 5.81494904, g_loss: 1.61146033
+[      88 Epoch:[ 0/25] [  87/ 917] time: 270.8348, d_loss: 6.41152477, g_loss: 0.07644252
+[      89 Epoch:[ 0/25] [  88/ 917] time: 273.6097, d_loss: 6.72205257, g_loss: 3.72225285
+[      90 Epoch:[ 0/25] [  89/ 917] time: 276.6387, d_loss: 7.43000889, g_loss: 0.00417650
+[      91 Epoch:[ 0/25] [  90/ 917] time: 279.5198, d_loss: 8.07805634, g_loss: 5.58171701
+[      92 Epoch:[ 0/25] [  91/ 917] time: 282.3848, d_loss: 6.47019768, g_loss: 0.02883219
+[      93 Epoch:[ 0/25] [  92/ 917] time: 285.2886, d_loss: 4.10174990, g_loss: 2.27932215
+[      94 Epoch:[ 0/25] [  93/ 917] time: 288.1229, d_loss: 6.27200079, g_loss: 0.00788933
+[      95 Epoch:[ 0/25] [  94/ 917] time: 290.9924, d_loss: 5.39632797, g_loss: 6.68673849
+[      96 Epoch:[ 0/25] [  95/ 917] time: 293.7888, d_loss: 4.57339191, g_loss: 0.17551106
+[      97 Epoch:[ 0/25] [  96/ 917] time: 296.7307, d_loss: 3.90713358, g_loss: 2.87014365
+[      98 Epoch:[ 0/25] [  97/ 917] time: 299.6829, d_loss: 5.40687943, g_loss: 0.12616883
+[      99 Epoch:[ 0/25] [  98/ 917] time: 302.7140, d_loss: 4.65452480, g_loss: 1.84277558
+[     100 Epoch:[ 0/25] [  99/ 917] time: 305.7528, d_loss: 5.82964277, g_loss: 0.03548591
+[     101 Epoch:[ 0/25] [ 100/ 917] time: 308.7289, d_loss: 3.79848218, g_loss: 2.34074998
+[     102 Epoch:[ 0/25] [ 101/ 917] time: 311.5944, d_loss: 4.80088949, g_loss: 0.02233131
+[     103 Epoch:[ 0/25] [ 102/ 917] time: 314.5486, d_loss: 3.74132895, g_loss: 4.34501457
+[     104 Epoch:[ 0/25] [ 103/ 917] time: 317.3653, d_loss: 4.69672394, g_loss: 0.04556547
+[     105 Epoch:[ 0/25] [ 104/ 917] time: 320.2633, d_loss: 4.32595348, g_loss: 3.97537804
+[     106 Epoch:[ 0/25] [ 105/ 917] time: 323.3231, d_loss: 4.83155107, g_loss: 0.08610195
+[     107 Epoch:[ 0/25] [ 106/ 917] time: 326.2895, d_loss: 3.68704724, g_loss: 3.58477068
+[     108 Epoch:[ 0/25] [ 107/ 917] time: 329.2916, d_loss: 4.57815027, g_loss: 0.03665461
+[     109 Epoch:[ 0/25] [ 108/ 917] time: 332.2779, d_loss: 3.08646727, g_loss: 1.94340312
+[     110 Epoch:[ 0/25] [ 109/ 917] time: 335.1746, d_loss: 3.92888141, g_loss: 0.07324035
+[     111 Epoch:[ 0/25] [ 110/ 917] time: 338.0016, d_loss: 4.61061764, g_loss: 7.04528427
+[     112 Epoch:[ 0/25] [ 111/ 917] time: 340.8021, d_loss: 3.83771157, g_loss: 0.12732959
+[     113 Epoch:[ 0/25] [ 112/ 917] time: 343.7491, d_loss: 3.11896181, g_loss: 0.29907018
+[     114 Epoch:[ 0/25] [ 113/ 917] time: 346.5853, d_loss: 2.31079865, g_loss: 2.53341508
+[     115 Epoch:[ 0/25] [ 114/ 917] time: 349.5288, d_loss: 3.55496740, g_loss: 0.32017416
+[     116 Epoch:[ 0/25] [ 115/ 917] time: 352.4480, d_loss: 2.62939739, g_loss: 1.60815609
+[     117 Epoch:[ 0/25] [ 116/ 917] time: 355.3561, d_loss: 4.05104876, g_loss: 0.06881048
+[     118 Epoch:[ 0/25] [ 117/ 917] time: 358.1617, d_loss: 4.63993740, g_loss: 6.99104786
+[     119 Epoch:[ 0/25] [ 118/ 917] time: 361.0822, d_loss: 4.36410379, g_loss: 0.03336303
+[     120 Epoch:[ 0/25] [ 119/ 917] time: 363.9204, d_loss: 1.46498990, g_loss: 4.15712023
+[     121 Epoch:[ 0/25] [ 120/ 917] time: 366.8340, d_loss: 2.50286412, g_loss: 0.36302817
+[     122 Epoch:[ 0/25] [ 121/ 917] time: 369.6848, d_loss: 2.00909019, g_loss: 2.64325523
+[     123 Epoch:[ 0/25] [ 122/ 917] time: 372.5194, d_loss: 3.37621665, g_loss: 0.17395775
+[     124 Epoch:[ 0/25] [ 123/ 917] time: 375.3780, d_loss: 2.53113842, g_loss: 3.91052842
+[     125 Epoch:[ 0/25] [ 124/ 917] time: 378.2784, d_loss: 3.42866445, g_loss: 0.14196759
+[     126 Epoch:[ 0/25] [ 125/ 917] time: 381.3010, d_loss: 3.00897193, g_loss: 3.16105676
+[     127 Epoch:[ 0/25] [ 126/ 917] time: 384.1560, d_loss: 4.28452778, g_loss: 0.08544458
+[     128 Epoch:[ 0/25] [ 127/ 917] time: 387.0090, d_loss: 2.40963054, g_loss: 2.83659387Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+
+[     129 Epoch:[ 0/25] [ 128/ 917] time: 389.8597, d_loss: 5.25902033, g_loss: 0.05937394
+[     130 Epoch:[ 0/25] [ 129/ 917] time: 392.8285, d_loss: 3.53547740, g_loss: 2.21099663
+[     131 Epoch:[ 0/25] [ 130/ 917] time: 395.6350, d_loss: 5.66259623, g_loss: 0.09746028
+[     132 Epoch:[ 0/25] [ 131/ 917] time: 398.4557, d_loss: 2.97087598, g_loss: 4.26350021
+[     133 Epoch:[ 0/25] [ 132/ 917] time: 401.3218, d_loss: 7.39898491, g_loss: 0.00733591
+[     134 Epoch:[ 0/25] [ 133/ 917] time: 404.3009, d_loss: 2.42439270, g_loss: 3.65765047
+[     135 Epoch:[ 0/25] [ 134/ 917] time: 407.1235, d_loss: 4.38038492, g_loss: 0.15823576
+[     136 Epoch:[ 0/25] [ 135/ 917] time: 411.0939, d_loss: 3.78956938, g_loss: 1.18014586
+[     137 Epoch:[ 0/25] [ 136/ 917] time: 413.9190, d_loss: 5.40172863, g_loss: 0.04471134
+[     138 Epoch:[ 0/25] [ 137/ 917] time: 416.8933, d_loss: 4.72570610, g_loss: 5.75982189
+[     139 Epoch:[ 0/25] [ 138/ 917] time: 419.7185, d_loss: 5.84365654, g_loss: 0.02331257
+[     140 Epoch:[ 0/25] [ 139/ 917] time: 422.5737, d_loss: 4.34833574, g_loss: 3.86873674
+[     141 Epoch:[ 0/25] [ 140/ 917] time: 425.4271, d_loss: 4.59710026, g_loss: 0.06542730
+[     142 Epoch:[ 0/25] [ 141/ 917] time: 428.2534, d_loss: 2.25006509, g_loss: 3.61775875
+[     143 Epoch:[ 0/25] [ 142/ 917] time: 431.2562, d_loss: 5.34146309, g_loss: 0.02106542
+[     144 Epoch:[ 0/25] [ 143/ 917] time: 434.0829, d_loss: 6.77560186, g_loss: 3.00921297
+[     145 Epoch:[ 0/25] [ 144/ 917] time: 436.8858, d_loss: 5.84894800, g_loss: 0.02412378
+[     146 Epoch:[ 0/25] [ 145/ 917] time: 439.6436, d_loss: 5.93047571, g_loss: 4.07159710
+[     147 Epoch:[ 0/25] [ 146/ 917] time: 442.6091, d_loss: 4.76098299, g_loss: 0.02928186
+[     148 Epoch:[ 0/25] [ 147/ 917] time: 445.4922, d_loss: 3.14308357, g_loss: 2.52633381
+[     149 Epoch:[ 0/25] [ 148/ 917] time: 448.3251, d_loss: 4.00909233, g_loss: 0.11681347
+[     150 Epoch:[ 0/25] [ 149/ 917] time: 451.1259, d_loss: 2.15368581, g_loss: 3.60746408
+[     151 Epoch:[ 0/25] [ 150/ 917] time: 454.0295, d_loss: 3.18114519, g_loss: 0.41187429
+[     152 Epoch:[ 0/25] [ 151/ 917] time: 456.9343, d_loss: 3.25652742, g_loss: 0.22312266
+[     153 Epoch:[ 0/25] [ 152/ 917] time: 459.8164, d_loss: 3.50589991, g_loss: 6.25497150
+[     154 Epoch:[ 0/25] [ 153/ 917] time: 462.6796, d_loss: 4.27447510, g_loss: 0.08926000
+[     155 Epoch:[ 0/25] [ 154/ 917] time: 465.4765, d_loss: 2.70533299, g_loss: 2.73533797
+[     156 Epoch:[ 0/25] [ 155/ 917] time: 468.3240, d_loss: 3.70225406, g_loss: 0.07567354
+[     157 Epoch:[ 0/25] [ 156/ 917] time: 471.2232, d_loss: 3.94562745, g_loss: 3.16646194
+[     158 Epoch:[ 0/25] [ 157/ 917] time: 474.0916, d_loss: 3.35397696, g_loss: 0.11993091
+[     159 Epoch:[ 0/25] [ 158/ 917] time: 477.1161, d_loss: 1.54183602, g_loss: 7.37397194
+[     160 Epoch:[ 0/25] [ 159/ 917] time: 479.9215, d_loss: 6.71093273, g_loss: 0.02088189
+[     161 Epoch:[ 0/25] [ 160/ 917] time: 482.7555, d_loss: 3.05392981, g_loss: 4.79509020
+[     162 Epoch:[ 0/25] [ 161/ 917] time: 485.6013, d_loss: 2.63776517, g_loss: 0.22813086
+[     163 Epoch:[ 0/25] [ 162/ 917] time: 488.4753, d_loss: 2.90958977, g_loss: 3.05273151
+[     164 Epoch:[ 0/25] [ 163/ 917] time: 491.2947, d_loss: 3.24554920, g_loss: 0.12419558
+[     165 Epoch:[ 0/25] [ 164/ 917] time: 494.2701, d_loss: 3.06251526, g_loss: 2.92945671
+[     166 Epoch:[ 0/25] [ 165/ 917] time: 497.1309, d_loss: 3.11882472, g_loss: 0.13486415
+[     167 Epoch:[ 0/25] [ 166/ 917] time: 500.1215, d_loss: 3.10760665, g_loss: 3.54848528
+[     168 Epoch:[ 0/25] [ 167/ 917] time: 503.1066, d_loss: 2.99205065, g_loss: 0.16447817
+[     169 Epoch:[ 0/25] [ 168/ 917] time: 506.0634, d_loss: 2.93359756, g_loss: 2.01628137
+[     170 Epoch:[ 0/25] [ 169/ 917] time: 509.1111, d_loss: 2.80305290, g_loss: 0.16796955
+[     171 Epoch:[ 0/25] [ 170/ 917] time: 512.0923, d_loss: 2.55031967, g_loss: 2.68842697
+[     172 Epoch:[ 0/25] [ 171/ 917] time: 515.0743, d_loss: 2.27600765, g_loss: 0.33403102
+[     173 Epoch:[ 0/25] [ 172/ 917] time: 517.9355, d_loss: 1.58103848, g_loss: 0.68378651
+[     174 Epoch:[ 0/25] [ 173/ 917] time: 520.8658, d_loss: 1.96978307, g_loss: 0.43259051
+[     175 Epoch:[ 0/25] [ 174/ 917] time: 523.6585, d_loss: 1.56802773, g_loss: 1.81600404
+[     176 Epoch:[ 0/25] [ 175/ 917] time: 526.4782, d_loss: 4.77693224, g_loss: 0.03174333
+[     177 Epoch:[ 0/25] [ 176/ 917] time: 529.3038, d_loss: 3.26456642, g_loss: 5.79684973
+[     178 Epoch:[ 0/25] [ 177/ 917] time: 532.0470, d_loss: 2.14239359, g_loss: 0.52035642
+[     179 Epoch:[ 0/25] [ 178/ 917] time: 534.9646, d_loss: 3.53877497, g_loss: 0.10009417
+[     180 Epoch:[ 0/25] [ 179/ 917] time: 537.9447, d_loss: 3.08748770, g_loss: 3.43442535
+[     181 Epoch:[ 0/25] [ 180/ 917] time: 540.9245, d_loss: 4.62474537, g_loss: 0.02858450
+[     182 Epoch:[ 0/25] [ 181/ 917] time: 543.8924, d_loss: 3.98743987, g_loss: 4.27097988
+[     183 Epoch:[ 0/25] [ 182/ 917] time: 546.8693, d_loss: 4.77987576, g_loss: 0.05885959
+[     184 Epoch:[ 0/25] [ 183/ 917] time: 549.6721, d_loss: 3.65792918, g_loss: 4.90033340
+[     185 Epoch:[ 0/25] [ 184/ 917] time: 552.5920, d_loss: 3.60088325, g_loss: 0.14677955
+[     186 Epoch:[ 0/25] [ 185/ 917] time: 555.3107, d_loss: 2.59652066, g_loss: 1.69573641
+[     187 Epoch:[ 0/25] [ 186/ 917] time: 558.3805, d_loss: 2.81488514, g_loss: 0.46427882
+[     188 Epoch:[ 0/25] [ 187/ 917] time: 561.2818, d_loss: 2.33858299, g_loss: 0.54329503
+[     189 Epoch:[ 0/25] [ 188/ 917] time: 564.2767, d_loss: 1.96056843, g_loss: 0.70250899
+[     190 Epoch:[ 0/25] [ 189/ 917] time: 567.2506, d_loss: 1.30080986, g_loss: 0.93489212
+[     191 Epoch:[ 0/25] [ 190/ 917] time: 570.0911, d_loss: 1.68984091, g_loss: 0.42043647
+[     192 Epoch:[ 0/25] [ 191/ 917] time: 572.9921, d_loss: 2.09145021, g_loss: 2.68958092
+[     193 Epoch:[ 0/25] [ 192/ 917] time: 575.9215, d_loss: 3.40679860, g_loss: 0.06651640
+[     194 Epoch:[ 0/25] [ 193/ 917] time: 578.7321, d_loss: 3.81787777, g_loss: 6.76748276
+[     195 Epoch:[ 0/25] [ 194/ 917] time: 581.5064, d_loss: 1.52470040, g_loss: 0.63177347
+[     196 Epoch:[ 0/25] [ 195/ 917] time: 584.5330, d_loss: 2.08447814, g_loss: 0.33992988
+[     197 Epoch:[ 0/25] [ 196/ 917] time: 587.4823, d_loss: 1.84691978, g_loss: 1.81578350
+[     198 Epoch:[ 0/25] [ 197/ 917] time: 590.4466, d_loss: 2.46459341, g_loss: 0.21702392
+[     199 Epoch:[ 0/25] [ 198/ 917] time: 593.3531, d_loss: 1.74543583, g_loss: 3.12680697
+[     200 Epoch:[ 0/25] [ 199/ 917] time: 596.3499, d_loss: 2.94280028, g_loss: 0.14491566
+[Sample] d_loss: 2.09741139, g_loss: 0.50628555
+[     201 Epoch:[ 0/25] [ 200/ 917] time: 600.8974, d_loss: 3.51539779, g_loss: 3.25870490
+[     202 Epoch:[ 0/25] [ 201/ 917] time: 603.7239, d_loss: 3.46129298, g_loss: 0.11213999
+[     203 Epoch:[ 0/25] [ 202/ 917] time: 606.5723, d_loss: 2.39719963, g_loss: 3.04468703
+[     204 Epoch:[ 0/25] [ 203/ 917] time: 609.4137, d_loss: 3.27064395, g_loss: 0.11987622
+[     205 Epoch:[ 0/25] [ 204/ 917] time: 612.2889, d_loss: 2.77145362, g_loss: 2.78247309
+[     206 Epoch:[ 0/25] [ 205/ 917] time: 615.1244, d_loss: 3.05262852, g_loss: 0.23601200
+[     207 Epoch:[ 0/25] [ 206/ 917] time: 618.1236, d_loss: 2.02442455, g_loss: 2.91619349
+[     208 Epoch:[ 0/25] [ 207/ 917] time: 620.9127, d_loss: 2.29533291, g_loss: 0.47264943
+[     209 Epoch:[ 0/25] [ 208/ 917] time: 623.8487, d_loss: 1.99438763, g_loss: 1.57281756
+[     210 Epoch:[ 0/25] [ 209/ 917] time: 626.7933, d_loss: 2.31972122, g_loss: 0.37934142
+[     211 Epoch:[ 0/25] [ 210/ 917] time: 629.7542, d_loss: 1.27032971, g_loss: 1.51788020
+[     212 Epoch:[ 0/25] [ 211/ 917] time: 632.6753, d_loss: 2.13607478, g_loss: 0.30945230
+[     213 Epoch:[ 0/25] [ 212/ 917] time: 635.7249, d_loss: 3.27998114, g_loss: 6.11874151
+[     214 Epoch:[ 0/25] [ 213/ 917] time: 638.6336, d_loss: 3.40533090, g_loss: 0.21360499
+[     215 Epoch:[ 0/25] [ 214/ 917] time: 641.6369, d_loss: 2.58285952, g_loss: 3.22266340
+[     216 Epoch:[ 0/25] [ 215/ 917] time: 644.4863, d_loss: 3.38076401, g_loss: 0.11620044
+[     217 Epoch:[ 0/25] [ 216/ 917] time: 647.3372, d_loss: 1.85412323, g_loss: 2.41331863
+[     218 Epoch:[ 0/25] [ 217/ 917] time: 650.1576, d_loss: 2.49006724, g_loss: 0.35291547
